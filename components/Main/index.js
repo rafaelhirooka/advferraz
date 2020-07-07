@@ -1,5 +1,4 @@
-import styles from './Main.module.css'
-import Link from 'next/link'
+import styles from './Main.module.css';
 
 export default function Main({children}) {
   return (
