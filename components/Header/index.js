@@ -78,6 +78,13 @@ export default function Header() {
             <button className={styles.menuItem}>
               <span>
                 <span className={styles.menuItemTitle}>
+                  Blog
+                </span>
+              </span>
+            </button>
+            <button className={styles.menuItem}>
+              <span>
+                <span className={styles.menuItemTitle}>
                   Contato
                 </span>
               </span>

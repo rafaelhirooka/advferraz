@@ -1,0 +1,57 @@
+.paper {
+  position: relative;
+  top: 0px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .paper {
+    max-width: 75rem;
+    margin: 0px auto;
+    top: 0px;
+    margin-top: 0px;
+  }
+}
+
+.paperHeader {
+  padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .paperHeader {
+    padding-top: 1.69rem;
+    padding-bottom: 1.69rem;
+    padding-left: 3.38rem;
+    padding-right: 3.38rem;
+  }
+}
+
+.paperTitle {
+  line-height: 1.32;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(34, 31, 31);
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .paperTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+.paperBody {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .paperBody {
+    flex-direction: row;
+  }
+}
