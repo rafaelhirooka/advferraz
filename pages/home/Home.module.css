@@ -157,3 +157,20 @@
   background: #221f1f;
   z-index: 1;
 }
+
+.firstSection {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .firstSection {
+    margin-top: 3.38rem;
+    margin-bottom: 3.38rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,97 @@
+.card {
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 76.88rem;
+  padding-right: 0.94rem;
+  padding-left: 0.94rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .card {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 3.38rem;
+  }
+}
+
+.cardImage {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+@media (min-width: 768px) {
+  .cardImage {
+    width: 40%;
+    padding-bottom: 0;
+    height: auto;
+  }
+}
+
+.cardImage > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.cardContent {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: #221f1f;
+  background: #221f1f;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .cardContent {
+    padding-top: 3.38rem;
+    padding-bottom: 3.38rem;
+    padding-left: 3.38rem;
+    padding-right: 3.38rem;
+    -webkit-flex-basis: 60%;
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+    display: block;
+  }
+}
+
+.cardContent h2 {
+  line-height: 1.32;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .cardContent h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.cardContent p {
+  font-weight: 300;
+    line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+  .cardContent p {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    color: #ffffff;
+  }
+}
