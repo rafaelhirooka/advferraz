@@ -1,9 +1,28 @@
+import {useEffect, useState} from 'react';
 import styles from './Header.module.css'
 import Link from 'next/link'
 
 export default function Header() {
+  const [solidHeader, setSolidHeader] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY >= 5) {
+        setSolidHeader(true);
+      }
+      else {
+        setSolidHeader(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header className={solidHeader ? styles.headerSolid : styles.header}>
       <section className={styles.headerSection}>
         <div className={styles.headerContainer}>
           <button role="button" aria-label="Side Menu" className={styles.buttonSideMenu}>
@@ -16,15 +35,27 @@ export default function Header() {
 
           <div className={styles.headerLogo}>
             <Link href="/">
-              <span className={styles.headerLogoSpan}>
-                <img className={styles.horizontalLogo} src="/logo.svg" />
-              </span>
+              {solidHeader ? (
+                <span className={styles.headerLogoSpan}>
+                  <img className={styles.horizontalLogo} src="/logo.svg" />
+                </span>
+              ) : (
+                <span className={styles.headerLogoSpan}>
+                  <img className={styles.horizontalLogo} src="/logo-gold.svg" />
+                </span>
+              )}
             </Link>
 
             <Link href="/">
-              <span className={styles.headerLogoSpan}>
-                <img className={styles.verticalLogo} src="/logo.svg" />
-              </span>
+              {solidHeader ? (
+                <span className={styles.headerLogoSpan}>
+                  <img className={styles.horizontalLogo} src="/logo.svg" />
+                </span>
+              ) : (
+                <span className={styles.headerLogoSpan}>
+                  <img className={styles.horizontalLogo} src="/logo-gold.svg" />
+                </span>
+              )}
             </Link>
           </div>
 
