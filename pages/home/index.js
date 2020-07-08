@@ -1,5 +1,6 @@
 import styles from './Home.module.css';
 import CardBlack from '../../components/CardBlack';
+import CardWhite from '../../components/CardWhite';
 import Button from '../../components/Button';
 import Paper from '../../components/Paper';
 import Grid from '../../components/Grid';
@@ -33,9 +34,6 @@ export default function Home() {
       </section>
 
       <section className={styles.homeSection}>
-        {/* <div style={{textAlign: "center"}}>
-          <h3 className={styles.sectionTitle}>Áreas de atuação</h3>
-        </div> */}
         <div className={styles.sectionContent}>
           <Paper title="Áreas de atuação">
             <Grid>
@@ -86,6 +84,15 @@ export default function Home() {
             </Grid>
           </Paper>
         </div>
+      </section>
+
+      <section className={styles.firstSection}>
+        <CardWhite 
+        title="Representando pessoas, não as Instituições Governamentais" 
+        description="Nossa história começou em 2007 com a visão de prestar um conjunto de serviço abrangentes e eficazes, utilizando mecanismos jurídicos mais atualizados que permitiriam alcançar os melhores resultados para nossos clientes." 
+        image="./gustavo-oliveira-ferraz.jpg"
+        button={<Button title="Veja mais" onClick={() => {alert('teste')}} />}
+        />
       </section>
     </div>
   );

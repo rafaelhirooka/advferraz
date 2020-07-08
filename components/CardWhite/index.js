@@ -1,4 +1,4 @@
-import styles from 'CardWhite.module.css';
+import styles from './CardWhite.module.css';
 
 export default function CardWhite({title, description, image, button: Button}) {
   return (
