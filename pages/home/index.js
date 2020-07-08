@@ -20,8 +20,8 @@ export default function Home() {
 
       <section className={styles.firstSection}>
         <CardBlack 
-        title="Internet entertainment. Global original content. Product personalization." 
-        description="Our first original series debuted in 2013. Over the following decades, Internet TV will replace linear, and we hope to keep leading by offering an amazing entertainment experience." 
+        title="Representando pessoas, não as Instituições Governamentais" 
+        description="Nossa história começou em 2007 com a visão de prestar um conjunto de serviço abrangentes e eficazes, utilizando mecanismos jurídicos mais atualizados que permitiriam alcançar os melhores resultados para nossos clientes." 
         image="./gustavo-oliveira-ferraz.jpg"
         button={<Button title="Veja mais" onClick={() => {alert('teste')}} />}
         />

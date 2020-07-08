@@ -129,6 +129,14 @@
   }
 }
 
+.buttonSideMenu svg {
+  width: 1.19rem;
+  height: 1.13rem;
+}
+
+.headerSolid .buttonSideMenu svg {
+  color: rgb(34, 31, 31);
+}
 
 .headerLogo {
   display: -webkit-box;

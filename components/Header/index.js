@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
-import styles from './Header.module.css'
-import Link from 'next/link'
+import styles from './Header.module.css';
+import Link from 'next/link';
+import {FiMenu} from 'react-icons/fi'
 
 export default function Header() {
   const [solidHeader, setSolidHeader] = useState(false);
@@ -28,7 +29,7 @@ export default function Header() {
           <button role="button" aria-label="Side Menu" className={styles.buttonSideMenu}>
             <span>
               <span>
-                Menu
+                <FiMenu/>
               </span>
             </span>
           </button>
@@ -49,11 +50,11 @@ export default function Header() {
             <Link href="/">
               {solidHeader ? (
                 <span className={styles.headerLogoSpan}>
-                  <img className={styles.horizontalLogo} src="/logo.svg" />
+                  <img className={styles.verticalLogo} src="/logo.svg" />
                 </span>
               ) : (
                 <span className={styles.headerLogoSpan}>
-                  <img className={styles.horizontalLogo} src="/logo-gold.svg" />
+                  <img className={styles.verticalLogo} src="/logo-gold.svg" />
                 </span>
               )}
             </Link>
