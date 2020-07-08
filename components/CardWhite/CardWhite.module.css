@@ -38,3 +38,264 @@
   bottom: 0;
   z-index: 0;
 }
+
+.cardTitleMobile {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: block;
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .cardTitleMobile {
+    padding-top: 2.56rem;
+    padding-left: 2.56rem;
+    padding-right: 2.56rem;
+
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.cardTitleMobile > h2 {
+  color: #221F1F;
+  line-height: 1.32;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #221f1f;
+  z-index: 100;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .cardTitleMobile > h2 {
+    font-size: 2rem;
+  }
+}
+
+.cardContent {
+  position: relative;
+  background: #ffffff;
+  z-index: 300;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+@media (min-width: 768px) {
+  .cardContent {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    -webkit-flex: 0.6;
+    -ms-flex: 0.6;
+    flex: 0.6;
+    z-index: 600;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+.cardContent:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: transparent;
+  box-shadow: 0 0 40px 5px rgba(0,0,0,0.8);
+  border-radius: 60%;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .cardContent:before {
+    width: 0.63rem;
+    top: 2%;
+    height: 96%;
+    right: 0;
+    left: auto;
+
+    visibility: visible;
+  }
+}
+
+.cardBody {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  -webkit-align-items: left;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  text-align: left;
+  position: relative;
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .cardBody {
+    padding-left: 2.56rem;
+    padding-right: 2.56rem;
+    padding-bottom: 2.56rem;
+    padding-top: 1rem;
+
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 945px) {
+  .cardBody {
+    padding: 4rem;
+  }
+}
+
+.cardBody > h2 {
+  color: #221F1F;
+  line-height: 1.32;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #221f1f;
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .cardBody > h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+    display: block;
+    visibility: visible;
+  }
+}
+
+.cardBody > p {
+  font-weight: 300;
+  line-height: 1.75;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+  color: #221f1f;
+}
+
+@media (min-width: 768px) {
+  .cardBody > p {
+    font-size: 1rem;
+    margin-bottom: 1.69rem;
+  }
+}
+
+.cardImageBorder {
+  visibility: hidden;
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .cardImageBorder {
+    visibility: visible;
+    display: inline-block;
+  }
+}
+
+.cardImageBorderContent {
+  position: relative;
+  background: #004283;
+  z-index: 500;
+  height: 25px;
+  width: 100%;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+@media (min-width: 768px) {
+  .cardImageBorderContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(60% + 25px);
+    height: 100%;
+  }
+}
+
+.cardImageBorderContent:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: transparent;
+  box-shadow: 0 0 40px 5px rgba(0,0,0,0.8);
+  border-radius: 60%;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+
+  height: 0.63rem;
+  left: 2%;
+  width: 96%;
+  bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .cardImageBorderContent:before {
+    width: 0.63rem;
+    top: 2%;
+    height: 96%;
+    right: 0;
+    left: auto;
+  }
+}
+
+.cardImageBorderContent:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #004283;
+  z-index: 1;
+}
+
+.cardImage {
+  visibility: hidden;
+    display: none;
+}
+
+@media (min-width: 768px) {
+  .cardImage {
+    visibility: visible;
+    display: block;
+    -webkit-flex: 0.4;
+    -ms-flex: 0.4;
+    flex: 0.4;
+    height: auto;
+    padding-top: initial;
+    max-width: 75rem;
+    margin: 0 auto;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    z-index: 400;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+  }
+}
+
+.cardImage > img {
+  max-width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 600ms ease 0s;
+}
