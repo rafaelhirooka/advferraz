@@ -1,6 +1,7 @@
 import styles from './Home.module.css';
 import CardBlack from '../../components/CardBlack';
 import CardWhite from '../../components/CardWhite';
+import BlogPaper from '../../components/BlogPaper';
 import Button from '../../components/Button';
 import Paper from '../../components/Paper';
 import Grid from '../../components/Grid';
@@ -93,6 +94,24 @@ export default function Home() {
         image="./contact-whatsapp.jpg"
         button={<Button title="Agendar consulta" onClick={() => {window.open('https://api.whatsapp.com/send?phone=5519996045373&text=Ol%C3%A1%20gostaria%20de%20agendar%20uma%20consulta')}} />}
         />
+      </section>
+
+      <section className={styles.homeSection}>
+        <h3 className={styles.sectionTitle}>Leia nosso Blog</h3>
+        <div className={styles.lastSection}>
+          <BlogPaper 
+          title="DR. GUSTAVO FERRAZ É NOMEADO PARA COMISSÃO DE SEGURIDADE SOCIAL DE CAMPINAS/SP"
+          description="Quero Agradecer a Comissão de Direito da Seguridade Social da Cidade de Campinas/SP pela nomeação de minha pessoa co..."
+          button={<Button title="Veja mais" onClick={() => {alert('teste')}} />}
+          style={{marginRight: '0.63rem', marginLeft: '0'}}
+          />
+
+          <BlogPaper 
+          title="DR. GUSTAVO FERRAZ É NOMEADO PARA A COMISSÃO ESPECIAL DE DIREITO PREVIDENCIÁRIO OAB/SP"
+          description="Fico honrado e agradecido pela confiança do Advogado, Professor e doutrinador José Roberto Sodero..."
+          button={<Button title="Veja mais" onClick={() => {alert('teste')}} />}
+          />
+        </div>
       </section>
     </div>
   );

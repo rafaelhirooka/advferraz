@@ -192,7 +192,7 @@
   }
 }
 
-.homeSection .sectionTitle {
+.sectionTitle {
   color: #221F1F;
   line-height: 1.32;
   margin-bottom: 0.75rem;
@@ -204,7 +204,7 @@
 }
 
 @media (min-width: 768px) {
-  .homeSection .sectionTitle {
+  .sectionTitle {
     margin-bottom: 1.25rem;
     font-size: 1.5rem;
   }
@@ -270,5 +270,31 @@
   .expertiseTitle {
     margin-bottom: 0.38rem;
     font-size: 1.25rem;
+  }
+}
+
+.lastSection {
+  position: relative;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 0.94rem;
+}
+
+@media (min-width: 768px) {
+  .lastSection {
+    margin-bottom: 5rem;
+
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
