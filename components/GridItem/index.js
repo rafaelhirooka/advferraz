@@ -1,4 +1,4 @@
-import styles from './Griditem.module.css';
+import styles from './GridItem.module.css';
 
 export default function GridItem({children}) {
   return (
