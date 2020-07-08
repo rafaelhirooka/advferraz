@@ -12,8 +12,8 @@ export default function Home() {
     <div>
       <section className={styles.cover}>
         <div className={styles.caption}>
-          <h1 className={styles.captionTitle}>A great workplace combines exceptional colleagues and hard problems.</h1>
-          <h2 className={styles.captionSubTitle}>Teste</h2>
+          <h1 className={styles.captionTitle}>Representando pessoas, não as Instituições Governamentais.</h1>
+          <h2 className={styles.captionSubTitle}>Nossos profissionais (Mestres e Especialistas), estão sempre prontos para lhe prestar um serviço de excelência.</h2>
         </div>
         <div className={styles.coverBackground}>
           <video autoPlay loop paysinline muted>
@@ -43,25 +43,25 @@ export default function Home() {
                 <div className={styles.expertiseIcon}>
                   <FaBalanceScale />
                 </div>
-                <h3 className={styles.expertiseTitle}>Direito Previdenciário</h3>
+                <h3 className={styles.expertiseTitle}>Direito<br/>Previdenciário</h3>
               </GridItem>
               <GridItem>
                 <div className={styles.expertiseIcon}>
                   <FaNewspaper />
                 </div>
-                <h3 className={styles.expertiseTitle}>Direito Cível</h3>
+                <h3 className={styles.expertiseTitle}>Direito<br/>Cível</h3>
               </GridItem>
               <GridItem>
                 <div className={styles.expertiseIcon}>
                   <FaSuitcase />
                 </div>
-                <h3 className={styles.expertiseTitle}>Direito Trabalhista</h3>
+                <h3 className={styles.expertiseTitle}>Direito<br/>Trabalhista</h3>
               </GridItem>
               <GridItem>
                 <div className={styles.expertiseIcon}>
                   <FaUniversity />
                 </div>
-                <h3 className={styles.expertiseTitle}>Direito Administrativo</h3>
+                <h3 className={styles.expertiseTitle}>Direito<br/>Administrativo</h3>
               </GridItem>
             </Grid>
             <Grid>
@@ -69,7 +69,7 @@ export default function Home() {
                 <div className={styles.expertiseIcon}>
                   <FaIndustry />
                 </div>
-                <h3 className={styles.expertiseTitle}>Direito Empresarial</h3>
+                <h3 className={styles.expertiseTitle}>Direito<br/>Empresarial</h3>
               </GridItem>
               <GridItem>
                 <div className={styles.expertiseIcon}>
@@ -81,7 +81,7 @@ export default function Home() {
                 <div className={styles.expertiseIcon}>
                   <FaPiggyBank />
                 </div>
-                <h3 className={styles.expertiseTitle}>Direito Bancário</h3>
+                <h3 className={styles.expertiseTitle}>Direito<br/>Bancário</h3>
               </GridItem>
             </Grid>
           </Paper>

@@ -92,6 +92,8 @@ export default function Header() {
           </nav>
         </div>
       </section>
+      
+      <div className={styles.headerShadow}></div>
     </header>
   )
 }
