@@ -36,6 +36,7 @@
   font-weight: 600;
   color: rgb(34, 31, 31);
   margin-bottom: 12px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
