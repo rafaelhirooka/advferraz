@@ -88,10 +88,10 @@ export default function Home() {
 
       <section className={styles.firstSection}>
         <CardWhite 
-        title="Representando pessoas, não as Instituições Governamentais" 
-        description="Nossa história começou em 2007 com a visão de prestar um conjunto de serviço abrangentes e eficazes, utilizando mecanismos jurídicos mais atualizados que permitiriam alcançar os melhores resultados para nossos clientes." 
-        image="./gustavo-oliveira-ferraz.jpg"
-        button={<Button title="Veja mais" onClick={() => {alert('teste')}} />}
+        title="Agende uma consulta" 
+        description="Entre em contato conosco agora mesmo e agende uma consulta pelo nosso WhatsApp" 
+        image="./contact-whatsapp.jpg"
+        button={<Button title="Agendar consulta" onClick={() => {window.open('https://api.whatsapp.com/send?phone=5519996045373&text=Ol%C3%A1%20gostaria%20de%20agendar%20uma%20consulta')}} />}
         />
       </section>
     </div>
