@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 75rem;
+    margin: 0 auto;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: transparent;
+  box-shadow: 0 0 40px 5px rgba(0,0,0,0.8);
+  border-radius: 60%;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  height: 0.63rem;
+  left: 2%;
+  width: 96%;
+  bottom: 0;
+  z-index: 0;
+}
